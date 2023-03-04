@@ -14,10 +14,6 @@ const contactsSlice = createSlice({
   initialState: initialState,
 
   reducers: {
-    // addContact(state, action) {
-    //   const { name, number } = action.payload;
-    //   state.contacts.unshift({ id: nanoid(4), name, number });
-    // },
     addContact: {
       reducer(state, action) {
         state.contacts.unshift(action.payload);
